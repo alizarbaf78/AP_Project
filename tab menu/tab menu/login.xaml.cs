@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.ComponentModel.DataAnnotations;
 
 namespace tab_menu
 {
@@ -23,6 +24,22 @@ namespace tab_menu
         public login()
         {
             InitializeComponent();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            using (var db = new Model.Context())
+            {
+                var res = db.users.Where(i => i.Email == emaill.Text && i.Pass== pass.Password).FirstOrDefault();
+                if (res != null)
+                {
+                    MessageBox.Show("login");
+                }
+                else
+                {
+                    MessageBox.Show("wrong data");
+                }
+            }
         }
     }
 }

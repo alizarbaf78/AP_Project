@@ -26,13 +26,13 @@
         </Rectangle>
         <Grid Width="300" Margin="36,134,36,65">
             <TextBlock Text="Login" FontFamily="Segoe Print" FontSize="35" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="20" FontWeight="Bold" Cursor="No" Foreground="#FF039496" />
-            <TextBox HorizontalAlignment="Left" Height="48" TextWrapping="Wrap" Text="Email" VerticalAlignment="Top" Width="251" Margin="26,87,0,0" Foreground="#FF5D5D62"/>
-            <Button Content="Login" HorizontalAlignment="Right" VerticalAlignment="Top" Width="134" Margin="0,213,83,0" Height="34"  IsCancel="True" IsDefault="True" Background="#FF02B8BB" BorderBrush="#FF00F3F6" Foreground="White" FontSize="22" FontFamily="Script MT Bold">
+            <TextBox x:Name="emaill" HorizontalAlignment="Left" Height="48" TextWrapping="Wrap" Text="Email" VerticalAlignment="Top" Width="251" Margin="26,87,0,0" Foreground="#FF5D5D62"/>
+            <Button Content="Login" HorizontalAlignment="Right" VerticalAlignment="Top" Width="134" Margin="0,213,83,0" Height="34"  IsCancel="True" IsDefault="True" Background="#FF02B8BB" BorderBrush="#FF00F3F6" Foreground="White" FontSize="22" FontFamily="Script MT Bold" Click="Button_Click">
                 <Button.Effect>
                     <DropShadowEffect Color="#FF918989" BlurRadius="4" RenderingBias="Quality" Direction="300" Opacity="0.5"/>
                 </Button.Effect>
             </Button>
-            <PasswordBox HorizontalAlignment="Left" VerticalAlignment="Top" Height="48" Width="251" Margin="26,145,0,0" Password="Password"/>
+            <PasswordBox x:Name="pass" HorizontalAlignment="Left" VerticalAlignment="Top" Height="48" Width="251" Margin="26,145,0,0" Password="Password"/>
         </Grid>
         <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="I forgot my Email or Password" VerticalAlignment="Top" Margin="90,424,0,0" FontSize="14" Foreground="#FF039193"/>
     </Grid>
