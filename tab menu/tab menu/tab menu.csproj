@@ -144,9 +144,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Migrations\20190522234832_InitialCreate.cs" />
-    <Compile Include="Migrations\20190522234832_InitialCreate.designer.cs">
-      <DependentUpon>20190522234832_InitialCreate.cs</DependentUpon>
+    <Compile Include="Migrations\13980305073624_int.cs" />
+    <Compile Include="Migrations\13980305073624_int.designer.cs">
+      <DependentUpon>13980305073624_int.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\ContextModelSnapshot.cs" />
     <Compile Include="Model\Chang.cs" />
