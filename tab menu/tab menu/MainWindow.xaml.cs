@@ -61,5 +61,9 @@ namespace tab_menu
             ob.Show();
         }
 
+        private void Main_Navigated(object sender, NavigationEventArgs e)
+        {
+
+        }
     }
 }

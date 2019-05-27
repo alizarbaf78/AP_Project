@@ -28,18 +28,7 @@ namespace tab_menu
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            using (var db = new Model.Context())
-            {
-                var res = db.users.Where(i => i.Email == emaill.Text && i.Pass== pass.Password).FirstOrDefault();
-                if (res != null)
-                {
-                    MessageBox.Show("login");
-                }
-                else
-                {
-                    MessageBox.Show("wrong data");
-                }
-            }
+           
         }
     }
 }

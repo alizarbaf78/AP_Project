@@ -38,7 +38,7 @@
             <Grid x:Name="GridCurser" Width="200" Height="5" Background="#FF2396F3" HorizontalAlignment="Left" Margin="40,47,0,48" />
         </Grid>
         <Grid x:Name="his_page" Height="450" Background="Aquamarine">
-            <Frame x:Name="main"  Height="500" Width="380"/>
+            <Frame x:Name="main"  Height="500" Width="380" Navigated="Main_Navigated"/>
         </Grid>
         
     </StackPanel>
