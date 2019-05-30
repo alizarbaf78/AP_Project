@@ -144,6 +144,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="LOGIN.cs" />
     <Compile Include="Migrations\13980305073624_int.cs" />
     <Compile Include="Migrations\13980305073624_int.designer.cs">
       <DependentUpon>13980305073624_int.cs</DependentUpon>
