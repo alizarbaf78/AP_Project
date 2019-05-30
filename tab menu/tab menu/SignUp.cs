@@ -3,25 +3,33 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 
 namespace tab_menu
 {
     public class SignUp
     {
-        public void Signup(string first, string last, string email, string password, string confirm_password)
+        public bool Signup(string first, string last, string email, string password, string confirm_password)
         {
             using (var db = new Model.Context())
             {
-                if (password == confirm_password)
+                try
                 {
+                    if (password == confirm_password)
+                    {
 
-                    db.users.Add(new Model.User { Name = first, LastName = last, Email = email, Pass = password });
+                        db.users.Add(new Model.User { Name = first, LastName = last, Email = email, Pass = password });
+                        db.SaveChanges();
 
+                    }
+                    return true;
                 }
-                else
+                catch (Exception)
                 {
-                    Console.WriteLine("your pass is wrong ");
+                    MessageBox.Show("your pass is wrong");
+                    return false;
                 }
+
 
 
             }

@@ -21,6 +21,7 @@ namespace tab_menu.Model
         public string FullName { get{return Name + "  " + LastName;}}
         public string BoughtProdect { get; set; }
         public string CodePosti { get; set; }
+        public string Address { get; set; }
         public int GradeForProduct { get; set; }
         public Chang chang { set; get; }
 
