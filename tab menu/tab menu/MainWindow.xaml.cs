@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using tab_menu.FrontEnd;
 
 namespace tab_menu
 {
@@ -57,9 +58,18 @@ namespace tab_menu
         {
             // main.Content = new login();
 
-            Window1 ob = new Window1();
-            ob.Show();
+            //Window1 ob = new Window1();
+            //ob.Show();
+
+            Loginxaml login = new Loginxaml();
+
+            main.Children.Add(login);
+            
+
         }
+        private void btnclk2(object sender, RoutedEventArgs e)
+        {
+            sign_up sign = new sign_up();
 
         private void Main_Navigated(object sender, NavigationEventArgs e)
         {

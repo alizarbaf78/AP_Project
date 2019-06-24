@@ -15,17 +15,18 @@
                     <ComboBoxItem Content="Fa" FontFamily="Segoe Script"/>
                 </ComboBox>
             </StackPanel>
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" >
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Height="50" VerticalAlignment="Top" >
                 <Button Content="FAQ" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FFA2A2A2" FontWeight="Bold" FontSize="15" FontFamily="Segoe Script"/>
-                <Button Content="Contact Us" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FFA2A2A2" FontWeight="Bold" FontSize="15" FontFamily="Segoe Script"/>
-                <Button Content="Login" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FFA2A2A2" FontWeight="Bold" FontSize="15" FontFamily="Segoe Script"/>
-                <Button Content="Sign Up" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FFA2A2A2" FontWeight="Bold" FontSize="15" FontFamily="Segoe Script" Click="btnclk1"/>
+                <Button Content="Contact Us" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FFA2A2A2" FontWeight="Bold" FontSize="15" FontFamily="Segoe Script" Click="Button_Click_1"/>
+                <Button Content="Login" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FFA2A2A2" FontWeight="Bold" FontSize="15" FontFamily="Segoe Script" Click="btnclk1"/>
+                <Button Content="Sign Up" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FFA2A2A2" FontWeight="Bold" FontSize="15" FontFamily="Segoe Script" Click="btnclk2"/>
                 <Button Content="My Account" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FFA2A2A2" FontWeight="Bold" FontSize="15" FontFamily="Segoe Script"/>
-                <Button Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FFA2A2A2" FontWeight="Bold" FontSize="15" FontFamily="Segoe Script">
+                <Button Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FFA2A2A2" FontWeight="Bold" FontSize="15" FontFamily="Segoe Script" Click="Button_Click_2">
                     <materialDesign:PackIcon Kind="Power"  Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FFA2A2A2" FontWeight="Bold" FontSize="15" FontFamily="Segoe Script" VerticalAlignment="Center" Height="36" Width="43" />
                 </Button>
 
             </StackPanel>
+            
         </Grid>
         <Grid Height="100">
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="15" >
@@ -40,6 +41,7 @@
         <Grid x:Name="his_page" Height="450" Background="Aquamarine">
             <Frame x:Name="main"  Height="500" Width="380" Navigated="Main_Navigated"/>
         </Grid>
+
         
     </StackPanel>
 </Window>
