@@ -1,4 +1,4 @@
-﻿<UserControl x:Class="tab_menu.FrontEnd.Loginxaml"
+﻿<UserControl x:Class="tab_menu.FrontEnd.test_1"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
@@ -36,5 +36,4 @@
         <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="I forgot my Email or Password" VerticalAlignment="Top" Margin="90,404,0,0" FontSize="14" Foreground="#FF039193"/>
 
     </Grid>
-    
 </UserControl>

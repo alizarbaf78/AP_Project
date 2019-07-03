@@ -32,7 +32,7 @@ namespace tab_menu
 
             GridCurser.Margin = new Thickness(40 + (200 * index), 0, 0, 0);
 
-            switch(index)
+            switch (index)
             {
                 case 0:
                     his_page.Background = Brushes.Aquamarine;
@@ -54,26 +54,41 @@ namespace tab_menu
             }
         }
 
-        private void btnclk1(object sender, RoutedEventArgs e)
+        
+        //private void btnclk2(object sender, RoutedEventArgs e)
+        //{
+        //    sign_up sign = new sign_up();
+
+            
+
+        //}
+
+        private void u1_click(object sender, RoutedEventArgs e)
         {
-            // main.Content = new login();
+            U_Login ulogin = new U_Login();
 
-            //Window1 ob = new Window1();
-            //ob.Show();
+            ugrid.Children.Add(ulogin);
 
-            Loginxaml login = new Loginxaml();
-
-            main.Children.Add(login);
             
 
         }
-        private void btnclk2(object sender, RoutedEventArgs e)
-        {
-            sign_up sign = new sign_up();
 
-        private void Main_Navigated(object sender, NavigationEventArgs e)
+        private void Button_Click_1(object sender, RoutedEventArgs e)
         {
 
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            
+        }
+
+        
+
+        private void u2_click(object sender, RoutedEventArgs e)
+        {
+            sign_up signup = new sign_up();
+            ugrid2.Children.Add(sign_up);
         }
     }
 }
