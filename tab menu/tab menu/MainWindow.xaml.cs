@@ -65,11 +65,11 @@ namespace tab_menu
 
         private void u1_click(object sender, RoutedEventArgs e)
         {
-            U_Login ulogin = new U_Login();
+            //U_Login ulogin = new U_Login();
 
-            ugrid.Children.Add(ulogin);
+            //ugrid.Children.Add(ulogin);
+            ugrid2.Children.Clear();
 
-            
 
         }
 
@@ -87,8 +87,11 @@ namespace tab_menu
 
         private void u2_click(object sender, RoutedEventArgs e)
         {
-            sign_up signup = new sign_up();
-            ugrid2.Children.Add(sign_up);
+            //ugrid.Children.Clear();
+            USign_up signup = new USign_up();
+            ugrid2.Children.Add(signup);
+
+            
         }
     }
 }

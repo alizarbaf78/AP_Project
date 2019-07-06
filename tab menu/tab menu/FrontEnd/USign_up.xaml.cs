@@ -12,26 +12,17 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using tab_menu;
+
 namespace tab_menu.FrontEnd
 {
     /// <summary>
-    /// Interaction logic for U_Login.xaml
+    /// Interaction logic for USign_up.xaml
     /// </summary>
-    public partial class U_Login : UserControl
+    public partial class USign_up : UserControl
     {
-        //public event EventHandler UCButtonClicked;
-        public U_Login()
+        public USign_up()
         {
             InitializeComponent();
-        }
-
-        private void parent(object sender, RoutedEventArgs e)
-        {
-            //MainWindow.GetWindow.
-
-            //hm.Lbl1.Visibility = Visibility.Hidden;
-            //this.parent.
         }
     }
 }

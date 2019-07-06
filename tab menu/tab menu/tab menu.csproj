@@ -146,6 +146,9 @@
     </ApplicationDefinition>
     <Compile Include="AddFullInformation.cs" />
     <Compile Include="Edit_Information.cs" />
+    <Compile Include="FrontEnd\USign_up.xaml.cs">
+      <DependentUpon>USign_up.xaml</DependentUpon>
+    </Compile>
     <Compile Include="FrontEnd\U_Login.xaml.cs">
       <DependentUpon>U_Login.xaml</DependentUpon>
     </Compile>
@@ -153,6 +156,10 @@
     <Compile Include="Migrations\13980305073624_int.cs" />
     <Compile Include="Migrations\13980305073624_int.designer.cs">
       <DependentUpon>13980305073624_int.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\13980414170027_asfg.cs" />
+    <Compile Include="Migrations\13980414170027_asfg.designer.cs">
+      <DependentUpon>13980414170027_asfg.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\ContextModelSnapshot.cs" />
     <Compile Include="Model\Chang.cs" />
@@ -169,6 +176,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="FrontEnd\sign_up.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="FrontEnd\USign_up.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
