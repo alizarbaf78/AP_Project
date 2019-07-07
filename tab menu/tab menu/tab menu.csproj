@@ -92,6 +92,9 @@
     <Reference Include="Microsoft.Extensions.Primitives, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Extensions.Primitives.2.2.0\lib\netstandard2.0\Microsoft.Extensions.Primitives.dll</HintPath>
     </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="Remotion.Linq, Version=2.2.0.0, Culture=neutral, PublicKeyToken=fee00910d6e5f53b, processorArchitecture=MSIL">
       <HintPath>..\packages\Remotion.Linq.2.2.0\lib\net45\Remotion.Linq.dll</HintPath>
     </Reference>
@@ -146,6 +149,7 @@
     </ApplicationDefinition>
     <Compile Include="AddFullInformation.cs" />
     <Compile Include="Controler\dbcontroler.cs" />
+    <Compile Include="BackEnd\Edits.cs" />
     <Compile Include="Edit_Information.cs" />
     <Compile Include="FrontEnd\USign_up.xaml.cs">
       <DependentUpon>USign_up.xaml</DependentUpon>
@@ -153,14 +157,18 @@
     <Compile Include="FrontEnd\U_Login.xaml.cs">
       <DependentUpon>U_Login.xaml</DependentUpon>
     </Compile>
-    <Compile Include="LOGIN.cs" />
-    <Compile Include="Migrations\13980305073624_int.cs" />
-    <Compile Include="Migrations\13980305073624_int.designer.cs">
-      <DependentUpon>13980305073624_int.cs</DependentUpon>
+    <Compile Include="BackEnd\LOGIN.cs" />
+    <Compile Include="Migrations\20190707102628_a1.cs" />
+    <Compile Include="Migrations\20190707102628_a1.designer.cs">
+      <DependentUpon>20190707102628_a1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\13980414170027_asfg.cs" />
-    <Compile Include="Migrations\13980414170027_asfg.designer.cs">
-      <DependentUpon>13980414170027_asfg.cs</DependentUpon>
+    <Compile Include="Migrations\20190707110158_a2.cs" />
+    <Compile Include="Migrations\20190707110158_a2.designer.cs">
+      <DependentUpon>20190707110158_a2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\20190707110502_a3.cs" />
+    <Compile Include="Migrations\20190707110502_a3.designer.cs">
+      <DependentUpon>20190707110502_a3.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\ContextModelSnapshot.cs" />
     <Compile Include="Model\Chang.cs" />
@@ -168,7 +176,8 @@
     <Compile Include="Model\Master.cs" />
     <Compile Include="Model\Product.cs" />
     <Compile Include="Model\User.cs" />
-    <Compile Include="SignUp.cs" />
+    <Compile Include="BackEnd\SignUp.cs" />
+    <Compile Include="BackEnd\Views.cs" />
     <Compile Include="Window1.xaml.cs">
       <DependentUpon>Window1.xaml</DependentUpon>
     </Compile>
