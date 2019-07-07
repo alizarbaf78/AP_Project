@@ -19,8 +19,8 @@
 
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Height="50" VerticalAlignment="Top" >
 
-                <Button Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FFA2A2A2" FontWeight="Bold" FontSize="15" FontFamily="Segoe Script" Margin="0,9" >
-                    <materialDesign:PackIcon Kind="Power"  Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FFA2A2A2" FontWeight="Bold" FontSize="15" FontFamily="Segoe Script" VerticalAlignment="Center" Height="36" Width="43" />
+                <Button Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FFA2A2A2" FontWeight="Bold" FontSize="15" FontFamily="Segoe Script" Margin="0,9" Click="close_U" >
+                    <materialDesign:PackIcon Kind="Backspace"  Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FFA2A2A2" FontWeight="Bold" FontSize="15" FontFamily="Segoe Script" VerticalAlignment="Center" Height="36" Width="43" />
                 </Button>
 
                 <Button Content="FAQ" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FFA2A2A2" FontWeight="Bold" FontSize="15" FontFamily="Segoe Script"/>
@@ -28,7 +28,7 @@
                 <Button x:Name="u1" Content="Login" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FFA2A2A2" FontWeight="Bold" FontSize="15" FontFamily="Segoe Script" Click="u1_click"/>
                 <Button x:Name="sign_up" Content="Sign Up" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FFA2A2A2" FontWeight="Bold" FontSize="15" FontFamily="Segoe Script" Click="u2_click" />
                 <Button Content="My Account" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FFA2A2A2" FontWeight="Bold" FontSize="15" FontFamily="Segoe Script"/>
-                <Button Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FFA2A2A2" FontWeight="Bold" FontSize="15" FontFamily="Segoe Script" >
+                <Button Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FFA2A2A2" FontWeight="Bold" FontSize="15" FontFamily="Segoe Script" Click="close" >
                     <materialDesign:PackIcon Kind="Power"  Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FFA2A2A2" FontWeight="Bold" FontSize="15" FontFamily="Segoe Script" VerticalAlignment="Center" Height="36" Width="43" />
                 </Button>
 
@@ -43,14 +43,18 @@
                 <Button Uid="3" Content="CAMERA" Width="200" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF2196F3" FontWeight="Bold" FontSize="15" FontFamily="Segoe Script" Click="Button_Click"/>
                 <Button Uid="4" Content="ETC" Width="200" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF2196F3" FontWeight="Bold" FontSize="15" FontFamily="Segoe Script" Click="Button_Click"/>
             </StackPanel>
+            <Button Height="Auto" Margin="582,68,438,10" Click="show">
+
+            </Button>
             <Grid x:Name="GridCurser" Width="200" Height="5" Background="#FF2396F3" HorizontalAlignment="Left" Margin="40,47,0,48" />
         </Grid>
-        <Grid x:Name="his_page" Height="450" Background="Aquamarine">
+        <ScrollViewer x:Name="his_page" Height="450" Background="Aquamarine">
             <!--<Grid x:Name="main2"  Height="500" Width="380"/>-->
             <Grid x:Name="ugrid" Height="500" Width="380"/>
-            <Grid x:Name="ugrid2" Height="500" Width="380"/>
-        </Grid>
-
-
+            <!--<Grid x:Name="ugrid2" Height="500" Width="380"/>-->
+        </ScrollViewer>
+        <Button Content="Button" d:LayoutOverrides="Height"/>
+        
+            
     </StackPanel>
 </Window>

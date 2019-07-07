@@ -65,17 +65,17 @@ namespace tab_menu
 
         private void u1_click(object sender, RoutedEventArgs e)
         {
-            //U_Login ulogin = new U_Login();
+            U_Login ulogin = new U_Login();
 
-            //ugrid.Children.Add(ulogin);
-            ugrid2.Children.Clear();
+            ugrid.Children.Add(ulogin);
+
 
 
         }
 
-        private void Button_Click_1(object sender, RoutedEventArgs e)
+        private void close(object sender, RoutedEventArgs e)
         {
-
+            Window.GetWindow(this).Close();
         }
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
@@ -89,9 +89,23 @@ namespace tab_menu
         {
             //ugrid.Children.Clear();
             USign_up signup = new USign_up();
-            ugrid2.Children.Add(signup);
+            ugrid.Children.Add(signup);
 
             
+        }
+
+        
+
+        private void close_U(object sender, RoutedEventArgs e)
+        {
+            ugrid.Children.Clear();
+            //ugrid.Children.Clear();
+            
+        }
+
+        private void show(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

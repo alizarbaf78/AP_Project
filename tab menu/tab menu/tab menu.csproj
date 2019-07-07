@@ -145,6 +145,7 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="AddFullInformation.cs" />
+    <Compile Include="Controler\dbcontroler.cs" />
     <Compile Include="Edit_Information.cs" />
     <Compile Include="FrontEnd\USign_up.xaml.cs">
       <DependentUpon>USign_up.xaml</DependentUpon>
