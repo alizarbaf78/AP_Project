@@ -10,7 +10,9 @@ namespace tab_menu.Model
     public class User
     {
         public int ID { get; set; }
+
         public string Name { get; set; }
+        [Required(ErrorMessage = "need to enter an your email")]
         public string LastName { get; set; }
         [Required(ErrorMessage = "need to enter an your email")]
         public string Email { get; set; }
@@ -24,6 +26,7 @@ namespace tab_menu.Model
         public int GradeForProduct { get; set; }
         public bool isExist { get; set; }
         public Chang chang { set; get; }
+        List<Master> masters = new List<Master>();
 
 
 

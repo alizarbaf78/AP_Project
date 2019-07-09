@@ -18,6 +18,7 @@ namespace tab_menu.Model
         //  public bool Advise { get; set; }
         public string Pass { get; set; }
         public string PhonNumber { get; set; }
+        public bool IsMaster { get; set; }
         
         public string FullName { get { return Name + "  " + LastName; } }
         public Chang chang { set; get; }

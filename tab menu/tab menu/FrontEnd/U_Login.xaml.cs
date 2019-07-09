@@ -32,6 +32,9 @@ namespace tab_menu.FrontEnd
 
             //hm.Lbl1.Visibility = Visibility.Hidden;
             //this.parent.
+            ading ob1 = new ading();
+            ob1.login_user(txt_email.Text,pastext.Password);
+
         }
     }
 }

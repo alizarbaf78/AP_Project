@@ -1,16 +1,14 @@
 ﻿using System;
-
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
 
-namespace tab_menu
+namespace tab_menu.BackEnd
 {
-   public class Views
+    class Views
     {
-
         public void ViewInfoMember(string email)
         {
             using (var db = new Model.Context())
@@ -28,13 +26,41 @@ namespace tab_menu
         }
 
 
-        public void ViewAllMember()
+        public void showoneproduct(string userid)
         {
             using (var db = new Model.Context())
             {
-                var check = db.users.Where(i => i.isExist.Equals(true));
+                var A = db.products.Where(x => x.userID.Equals(userid));
+                Console.WriteLine(JsonConvert.SerializeObject(A));
+
                 db.SaveChanges();
-                Console.WriteLine(JsonConvert.SerializeObject(check));
+
+            }
+        }
+
+
+
+        public void ViewAllMember(string email)
+        {
+
+            using (var db = new Model.Context())
+            {
+                try
+                {
+                    if (db.masters.SingleOrDefault(s => s.Email == email).IsMaster == true)
+                    {
+
+
+                        var check = db.users.Where(i => i.isExist.Equals(true));
+                        db.SaveChanges();
+                        Console.WriteLine(JsonConvert.SerializeObject(check));
+                    }
+                }
+                catch (Exception e)
+                {
+
+                    throw new Exception();
+                }
 
             }
 

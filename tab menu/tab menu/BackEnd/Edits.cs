@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace tab_menu
+namespace tab_menu.BackEnd
 {
-    public class Edits
+    class Edits
     {
         public bool edit_product(string Pname, string name, string money, string color, string gender, string shelf, string weight)
         {
@@ -89,12 +89,5 @@ namespace tab_menu
 
 
         }
-
-
-
-
-
-
-
     }
 }

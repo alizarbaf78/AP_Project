@@ -13,7 +13,9 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 //using tab_menu;
+
 namespace tab_menu.FrontEnd
+
 {
     /// <summary>
     /// Interaction logic for Loginxaml.xaml
@@ -34,10 +36,10 @@ namespace tab_menu.FrontEnd
             //Window.GetWindow(this).Close();
             //MainWindow win = (MainWindow)Window.GetWindow(this);
             //win.Visibility = Visibility.Visible;
-            //Loginxaml logg = (Loginxaml)this.Parent;
+            //Loginxaml logg = (Logi
+            //(this.Parent as Canvas).Children.Remove(thinxaml)this.Parent;
             //logg.Visibility = Visibility.Hidden;
-
-            //(this.Parent as Canvas).Children.Remove(this);
+s);
             //(this.Parent as Canvas).Children.Remove(this);
             
         }

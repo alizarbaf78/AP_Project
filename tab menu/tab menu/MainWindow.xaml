@@ -7,54 +7,66 @@
         xmlns:local="clr-namespace:tab_menu"
         mc:Ignorable="d"
         Title="MainWindow" Height="600" Width="1080" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" WindowStyle="None">
-    <StackPanel Background="WhiteSmoke">
-        <Grid Height="50">
-            <StackPanel HorizontalAlignment="Left" Margin="11,0,0,0">
-                <ComboBox FontSize="15" Width="50" Foreground="#FFA2A2A2" SelectedIndex="0" VerticalAlignment="Center" FontFamily="Segoe Script">
-                    <ComboBoxItem Content="En" FontFamily="Segoe Script"/>
-                    <ComboBoxItem Content="Fa" FontFamily="Segoe Script"/>
-                </ComboBox>
+    <Grid Background="WhiteSmoke">
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Height="50" VerticalAlignment="Top" Margin="0,18,17,0" >
 
-            </StackPanel>
+            <Button Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FFA2A2A2" FontWeight="Bold" FontSize="15" FontFamily="Segoe Script" Margin="0,9" Click="close_U" >
+                <materialDesign:PackIcon Kind="Backspace"  Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FFA2A2A2" FontWeight="Bold" FontSize="15" FontFamily="Segoe Script" VerticalAlignment="Center" Height="36" Width="43" />
+            </Button>
 
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Height="50" VerticalAlignment="Top" >
+            <Button Content="FAQ" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FFA2A2A2" FontWeight="Bold" FontSize="15" FontFamily="Segoe Script"/>
+            <Button Content="Contact Us" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FFA2A2A2" FontWeight="Bold" FontSize="15" FontFamily="Segoe Script" />
+            <Button x:Name="u1" Content="Login" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FFA2A2A2" FontWeight="Bold" FontSize="15" FontFamily="Segoe Script" Click="u1_click"/>
+            <Button x:Name="sign_up" Content="Sign Up" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FFA2A2A2" FontWeight="Bold" FontSize="15" FontFamily="Segoe Script" Click="u2_click" />
+            <Button Content="My Account" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FFA2A2A2" FontWeight="Bold" FontSize="15" FontFamily="Segoe Script"/>
+            <Button Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FFA2A2A2" FontWeight="Bold" FontSize="15" FontFamily="Segoe Script" Click="close" >
+                <materialDesign:PackIcon Kind="Power"  Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FFA2A2A2" FontWeight="Bold" FontSize="15" FontFamily="Segoe Script" VerticalAlignment="Center" Height="36" Width="43" />
+            </Button>
 
-                <Button Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FFA2A2A2" FontWeight="Bold" FontSize="15" FontFamily="Segoe Script" Margin="0,9" Click="close_U" >
-                    <materialDesign:PackIcon Kind="Backspace"  Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FFA2A2A2" FontWeight="Bold" FontSize="15" FontFamily="Segoe Script" VerticalAlignment="Center" Height="36" Width="43" />
-                </Button>
-
-                <Button Content="FAQ" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FFA2A2A2" FontWeight="Bold" FontSize="15" FontFamily="Segoe Script"/>
-                <Button Content="Contact Us" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FFA2A2A2" FontWeight="Bold" FontSize="15" FontFamily="Segoe Script" />
-                <Button x:Name="u1" Content="Login" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FFA2A2A2" FontWeight="Bold" FontSize="15" FontFamily="Segoe Script" Click="u1_click"/>
-                <Button x:Name="sign_up" Content="Sign Up" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FFA2A2A2" FontWeight="Bold" FontSize="15" FontFamily="Segoe Script" Click="u2_click" />
-                <Button Content="My Account" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FFA2A2A2" FontWeight="Bold" FontSize="15" FontFamily="Segoe Script"/>
-                <Button Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FFA2A2A2" FontWeight="Bold" FontSize="15" FontFamily="Segoe Script" Click="close" >
-                    <materialDesign:PackIcon Kind="Power"  Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FFA2A2A2" FontWeight="Bold" FontSize="15" FontFamily="Segoe Script" VerticalAlignment="Center" Height="36" Width="43" />
-                </Button>
-
-            </StackPanel>
+        </StackPanel>
+        <Grid HorizontalAlignment="Left" Margin="11,0,0,0">
+            <!--<Grid.RowDefinitions>
+                <RowDefinition Height="97*"/>
+                <RowDefinition Height="103*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="0*"/>
+            </Grid.ColumnDefinitions>
+            <ComboBox FontSize="15" Foreground="#FFA2A2A2" SelectedIndex="0" VerticalAlignment="Bottom" FontFamily="Segoe Script" Height="48" Margin="0,0,0,276" Grid.RowSpan="2">
+                <ComboBoxItem Content="En" FontFamily="Segoe Script"/>
+                <ComboBoxItem Content="Fa" FontFamily="Segoe Script"/>
+            </ComboBox>-->
 
         </Grid>
-        <Grid Height="100">
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="15" >
+        <Grid Height="100" Margin="10,284,-10,216">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="439*"/>
+                <ColumnDefinition Width="210*"/>
+                <ColumnDefinition Width="146*"/>
+                <ColumnDefinition Width="286*"/>
+            </Grid.ColumnDefinitions>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="40,-204,40.4,0" Grid.ColumnSpan="4" >
                 <Button Uid="0" Content="HOME" Width="200" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF2196F3" FontWeight="Bold" FontSize="15" FontFamily="Segoe Script" Click="Button_Click"/>
                 <Button Uid="1" Content="MOBILE" Width="200" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF2196F3" FontWeight="Bold" FontSize="15" FontFamily="Segoe Script" Click="Button_Click"/>
                 <Button Uid="2" Content="LAP TOP" Width="200" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF2196F3" FontWeight="Bold" FontSize="15" FontFamily="Segoe Script" Click="Button_Click"/>
                 <Button Uid="3" Content="CAMERA" Width="200" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF2196F3" FontWeight="Bold" FontSize="15" FontFamily="Segoe Script" Click="Button_Click"/>
                 <Button Uid="4" Content="ETC" Width="200" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF2196F3" FontWeight="Bold" FontSize="15" FontFamily="Segoe Script" Click="Button_Click"/>
             </StackPanel>
-            <Button Height="Auto" Margin="582,68,438,10" Click="show">
-
-            </Button>
-            <Grid x:Name="GridCurser" Width="200" Height="5" Background="#FF2396F3" HorizontalAlignment="Left" Margin="40,47,0,48" />
+            <Button Height="Auto" Margin="24,-266,353.594,344" Click="show"/>
+            <!--<Grid x:Name="GridCurser" Width="200" Height="5" Background="#FF2396F3" HorizontalAlignment="Left" Margin="40,47,0,48" />-->
         </Grid>
-        <ScrollViewer x:Name="his_page" Height="450" Background="Aquamarine">
+        <ScrollViewer x:Name="his_page" Height="450" Background="Aquamarine" Margin="490,124,25,26">
+            <!--<Grid Height="282" Width="378"/>-->
             <!--<Grid x:Name="main2"  Height="500" Width="380"/>-->
-            <Grid x:Name="ugrid" Height="500" Width="380"/>
-            <!--<Grid x:Name="ugrid2" Height="500" Width="380"/>-->
+            <Grid x:Name="productgrid" Width="280" Height="366"/>
+
         </ScrollViewer>
-        <Button Content="Button" d:LayoutOverrides="Height"/>
-        
-            
-    </StackPanel>
+        <!--<Grid Height="100" Margin="10,0,-10,500"/>-->
+        <Grid x:Name="ucn" HorizontalAlignment="Left" Height="450" VerticalAlignment="Top" Width="474" Margin="16,124,0,0" Background="Aquamarine">
+            <Grid x:Name="ugrid" Height="500" Width="380"/>
+        </Grid>
+
+
+    </Grid>
 </Window>

@@ -24,5 +24,12 @@ namespace tab_menu.FrontEnd
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            ading ob2 = new ading();
+            ob2.Signup(txt_firstname.Text, txt_last.Text, txt_mail.Text, tpass.Password, ctpass.Password,true);
+            MessageBox.Show("salam");
+        }
     }
 }

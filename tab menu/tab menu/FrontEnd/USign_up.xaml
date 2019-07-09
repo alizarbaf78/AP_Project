@@ -26,18 +26,18 @@
             </Rectangle>
             <Grid Width="300" Height="400" Margin="36,43,36,26">
                 <TextBlock Text="SignUp" FontFamily="Segoe Print" FontSize="35" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="83,0,57,0" FontWeight="Bold" Cursor="No" Foreground="#FF039496" Width="160" />
-                <TextBox HorizontalAlignment="Left" Height="48" TextWrapping="Wrap" Text="FirstName" VerticalAlignment="Top" Width="251" Margin="26,62,0,0" Foreground="#FF5D5D62"/>
-                <TextBox HorizontalAlignment="Left" Height="48" TextWrapping="Wrap" Text="LastName" VerticalAlignment="Top" Width="251" Margin="26,115,0,0" Foreground="#FF5D5D62"/>
-                <TextBox HorizontalAlignment="Left" Height="48" TextWrapping="Wrap" Text="Email" VerticalAlignment="Top" Width="251" Margin="26,168,0,0" Foreground="#FF5D5D62"/>
+                <TextBox x:Name="txt_firstname" HorizontalAlignment="Left" Height="48" TextWrapping="Wrap" Text="FirstName" VerticalAlignment="Top" Width="251" Margin="27,62,0,0" Foreground="#FF5D5D62"/>
+                <TextBox x:Name="txt_last" HorizontalAlignment="Left" Height="48" TextWrapping="Wrap" Text="LastName" VerticalAlignment="Top" Width="251" Margin="26,115,0,0" Foreground="#FF5D5D62"/>
+                <TextBox x:Name="txt_mail" HorizontalAlignment="Left" Height="48" TextWrapping="Wrap" Text="Email" VerticalAlignment="Top" Width="251" Margin="26,168,0,0" Foreground="#FF5D5D62"/>
                 <TextBlock Text="Password" HorizontalAlignment="Left" Margin="27,221,0,156" Foreground="#FF039193"/>
                 <TextBlock Text="Confirm Password" HorizontalAlignment="Left" Margin="159,221,0,156" Foreground="#FF039193"/>
-                <Button Content="Login" HorizontalAlignment="Right" VerticalAlignment="Top" Width="134" Margin="0,309,83,0" Height="34" IsCancel="True" IsDefault="True" Background="#FF02B8BB" BorderBrush="#FF00F3F6" Foreground="White" FontSize="22" FontFamily="Script MT Bold">
+                <Button Content="Login" HorizontalAlignment="Right" VerticalAlignment="Top" Width="134" Margin="0,309,83,0" Height="34" IsCancel="True" IsDefault="True" Background="#FF02B8BB" BorderBrush="#FF00F3F6" Foreground="White" FontSize="22" FontFamily="Script MT Bold" Click="Button_Click">
                     <Button.Effect>
                         <DropShadowEffect Color="#FF918989" BlurRadius="4" RenderingBias="Quality" Direction="300" Opacity="0.5"/>
                     </Button.Effect>
                 </Button>
-                <PasswordBox HorizontalAlignment="Left" VerticalAlignment="Top" Height="35" Width="133" Margin="16,238,0,0" Password="Password"/>
-                <PasswordBox HorizontalAlignment="Left" VerticalAlignment="Top" Height="35" Width="133" Margin="154,238,0,0" Password="Password"/>
+                <PasswordBox x:Name="tpass" HorizontalAlignment="Left" VerticalAlignment="Top" Height="35" Width="133" Margin="16,238,0,0" Password="Password"/>
+                <PasswordBox x:Name="ctpass" HorizontalAlignment="Left" VerticalAlignment="Top" Height="35" Width="133" Margin="154,238,0,0" Password="Password"/>
 
             </Grid>
             <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Remind me about new products" VerticalAlignment="Top" Margin="101,412,0,0" FontSize="14" Foreground="#FF039193"/>

@@ -13,6 +13,8 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using tab_menu.FrontEnd;
+using tab_menu.Controler;
+using tab_menu.BackEnd;
 
 namespace tab_menu
 {
@@ -30,7 +32,7 @@ namespace tab_menu
         {
             int index = int.Parse(((Button)e.Source).Uid);
 
-            GridCurser.Margin = new Thickness(40 + (200 * index), 0, 0, 0);
+            //GridCurser.Margin = new Thickness(40 + (200 * index), 0, 0, 0);
 
             switch (index)
             {
@@ -44,10 +46,30 @@ namespace tab_menu
                     his_page.Background = Brushes.Azure;
                     break;
                 case 3:
-                    his_page.Background = Brushes.Black;
+                    his_page.Background = Brushes.RoyalBlue;
                     break;
                 case 4:
                     his_page.Background = Brushes.Bisque;
+                    break;
+
+
+            }
+            switch (index)
+            {
+                case 0:
+                    ucn.Background = Brushes.Aquamarine;
+                    break;
+                case 1:
+                    ucn.Background = Brushes.Beige;
+                    break;
+                case 2:
+                    ucn.Background = Brushes.Azure;
+                    break;
+                case 3:
+                    ucn.Background = Brushes.RoyalBlue;
+                    break;
+                case 4:
+                    ucn.Background = Brushes.Bisque;
                     break;
 
 
@@ -99,13 +121,38 @@ namespace tab_menu
         private void close_U(object sender, RoutedEventArgs e)
         {
             ugrid.Children.Clear();
+            productgrid.Children.Clear();
             //ugrid.Children.Clear();
             
         }
 
         private void show(object sender, RoutedEventArgs e)
         {
+            Uproduct ujk = new Uproduct();
+            productgrid.Children.Add(ujk);
+            //Views vv = new Views();
+            //ujk.pnam.Text = vv.viewoneproduct("mobile");
+            //try
+            //{
+            //    Controler.dbcontroler dBController = new Controler.dbcontroler();
+            //    List<Model.Product> products = dBController.Allproducts();
+            //    //foreach (var item in products)
+            //    //{
+            //    //    ////Uproduct uproductshow = new Uproduct();
+            //    //    //////uproductshow.AddHandler(item);
+            //    //    ////ucn.Children.Add(uproductshow);
+            //    //}
+                
+            //    //    UC.Product Show product Show = new UC.Product Show();
+            //    //product Show.Add Data(item);
+            //    //xpanel.Children.Add(productShowUC);
+                
+            //}
+            //catch (Exception ex)
+            //{
 
+            //    MessageBox.Show(ex.Message, "errror");
+            //}
         }
     }
 }

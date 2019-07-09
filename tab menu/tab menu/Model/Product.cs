@@ -13,7 +13,7 @@ namespace tab_menu.Model
 
         public string Color { get; set; }
         //public bool AdvisePlass { get; set; }
-
+        public int userID { get; set; }
         public string Weight { get; set; }
         public string Gender { set; get; }
         public string Shelf { get; set; }
